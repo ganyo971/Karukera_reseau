@@ -1,0 +1,77 @@
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
+
+
+int main(int argc,char** argv)
+{
+fprintf(stderr,"usage: RE216_CLIENT hostname port\n");
+
+    if (argc != 3)
+    {
+        fprintf(stderr,"usage: RE216_CLIENT hostname port\n");
+        return 1;
+    }
+
+//get address info from the server
+//get_addr_info()
+
+
+//get the socket
+
+int do_socket(int domain, int type, int protocol) {
+    int sockfd;
+    int yes = 1;
+//create the socket
+    sockfd = socket(domain, type, protocol);
+
+//check for socket validity
+	
+	if (sockfd == -1)
+		error("Socket no created");		
+
+// set socket option, to prevent "already in use" issue when rebooting the server right on
+
+    if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(int)) != -1)
+        error(\"ERROR setting socket options");
+
+    return sockfd;
+}
+
+   
+//s = do_socket()
+
+	int s = do_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+
+//connect to remote socket
+
+void do_connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen) {
+    int res = connect(sockfd, addr, addrlen);
+    if (res != 0) {
+
+	error("Connexion no established");
+
+    }
+
+}
+
+//do_connect()
+
+
+//get user input
+//readline()
+
+//send message to the server
+//handle_client_message()
+
+
+    return 0;
+
+
+}
