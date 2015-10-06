@@ -104,13 +104,13 @@ int main(int argc, char** argv)
 
         //do_read(new_socks, buffer);
         int lu = read(new_socks, buffer, (int) 256);
-        if (strcmp(buffer,"quit\n") == 0){
-            fprintf(stdout, "CLIENT --> %s : connexion terminée\n", buffer);
-            do_write(new_socks, "Connexion terminée\n");
+        if (strcmp(buffer,"/quit\n") == 0){
+            fprintf(stdout, "[CLIENT] : %s", buffer);
+            do_write(new_socks, "You will be terminated\n");
             break;
         }
         else{
-            fprintf(stdout, "CLIENT --> %s", buffer);
+            fprintf(stdout, "[CLIENT] : %s", buffer);
 
             //we write back to the client
             do_write(new_socks, buffer);   

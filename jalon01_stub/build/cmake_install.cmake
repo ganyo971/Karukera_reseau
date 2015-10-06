@@ -1,4 +1,4 @@
-# Install script for directory: /home/fumont/Projet_reseau/jalon01_stub/src
+# Install script for directory: /home/fumont/Karukera_reseau/jalon01_stub/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/fumont/Projet_reseau/jalon01_stub/build/jalon01/cmake_install.cmake")
+  INCLUDE("/home/fumont/Karukera_reseau/jalon01_stub/build/jalon01/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -44,7 +44,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/fumont/Projet_reseau/jalon01_stub/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/fumont/Karukera_reseau/jalon01_stub/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/fumont/Projet_reseau/jalon01_stub/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/fumont/Karukera_reseau/jalon01_stub/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

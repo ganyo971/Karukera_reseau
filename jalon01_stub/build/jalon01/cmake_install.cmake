@@ -1,4 +1,4 @@
-# Install script for directory: /home/fumont/Projet_reseau/jalon01_stub/src/jalon01
+# Install script for directory: /home/fumont/Karukera_reseau/jalon01_stub/src/jalon01
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

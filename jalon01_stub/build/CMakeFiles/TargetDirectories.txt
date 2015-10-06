@@ -1,2 +1,2 @@
-/home/fumont/Projet_reseau/jalon01_stub/build/jalon01/CMakeFiles/RE216_JALON01_CLIENT.dir
-/home/fumont/Projet_reseau/jalon01_stub/build/jalon01/CMakeFiles/RE216_JALON01_SERVER.dir
+/home/fumont/Karukera_reseau/jalon01_stub/build/jalon01/CMakeFiles/RE216_JALON01_CLIENT.dir
+/home/fumont/Karukera_reseau/jalon01_stub/build/jalon01/CMakeFiles/RE216_JALON01_SERVER.dir

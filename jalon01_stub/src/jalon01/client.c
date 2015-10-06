@@ -99,7 +99,7 @@ int main(int argc,char** argv)
     struct addrinfo ** res = &add;
     int sockfd;
 
-	get_addr_info(argv[1], argv[2], res);
+	get_addr_info(argv[2], argv[1], res);
 	add = *res;
 	addr= *add;
 
@@ -121,9 +121,11 @@ int main(int argc,char** argv)
 
         memset(&buffer, 0, (int) 256);
         read(sockfd, buffer, (int) 256);
-        fprintf(stderr, "SERVER --> %s", buffer);
-        if(strcmp(buffer, "Connexion terminée\n") == 0)
+        fprintf(stdout, "[SERVER] : %s", buffer);
+        if(strcmp(buffer, "You will be terminated\n") == 0){
+            fprintf(stdout, "Connection terminated\n");
             break;
+        }
     }
 
     close(sockfd);
