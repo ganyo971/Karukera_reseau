@@ -6,57 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/client/client.c
-stdlib.h
--
-unistd.h
--
-stdio.h
--
-string.h
--
-stddef.h
--
-sys/types.h
--
-sys/socket.h
--
-netdb.h
--
-sys/select.h
--
-resolv.h
--
-string.h
--
-sys/select.h
--
-stdlib.h
--
-../commons/network.h
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.h
-server.h
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/client/server.h
-client.h
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/client/client.h
-../commons/network.h
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.h
-../commons/contrib.h
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.h
-
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/client/client.h
-sys/types.h
--
-sys/socket.h
--
-netdb.h
--
-
 /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/colors.h
-
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.h
-unistd.h
--
 
 /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c
 stdio.h
@@ -103,8 +53,6 @@ stdbool.h
 -
 
 /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.h
-
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server.h
 
 /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/user.h
 stddef.h

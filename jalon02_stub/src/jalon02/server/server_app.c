@@ -53,7 +53,7 @@ int main(int argc, char** argv)
     do_bind(sockfd, serv_addr, sizeof(*serv_addr));
 
     //specify the socket to be a server socket and listen for at most 20 concurrent client
-    if(listen(sockfd, 20) == -1)
+    if(listen(sockfd, 20) == -1) 
         error("ERROR Listen");
 
     int new_socks;
@@ -64,19 +64,22 @@ int main(int argc, char** argv)
         //read what the client has to say
         char buffer[256];
         memset(buffer, 0, 256);
-        do_read(new_socks, buffer);          //(int) 256);     int lu = 
-        //do_read(new_socks, buffer);    
-            
-        if (strcmp(buffer,"/quit\n") == 0){
+        int lu = do_read(new_socks, buffer);            
+
+        
+        if (strcmp(buffer,"/quit\n") == 0)  {
+
             fprintf(stdout, "[CLIENT] : %s", buffer);
             do_write(new_socks, "You will be terminated\n");
             break;
         }
-        else{
+
+        else    {
+            
             fprintf(stdout, "[CLIENT] : %s", buffer);
 
             //we write back to the client
-            do_write(new_socks, buffer);   
+            int e = do_write(new_socks, buffer);            
         }
         
     }

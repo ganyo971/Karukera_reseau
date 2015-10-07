@@ -82,7 +82,7 @@ int main(int argc,char** argv)
         fprintf (stdout,"Tapez le message à envoyer (moins de 256 caractères) : \n");
         fgets((char *) buffer, 256, stdin);
         int ecrit = write(sockfd, buffer, strlen((char *) buffer));
-        
+                
         //handle_client_message(sockfd, &buffer, (int) 256);
 
         memset(&buffer, 0, (int) 256);

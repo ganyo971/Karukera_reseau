@@ -79,42 +79,35 @@ int do_accept(int sock, struct sockaddr * addr, socklen_t addr_len){
 }
 
 int do_read(const int sock, char buffer[256]){
-    int lu = read(sock, buffer, (int) 256);
 
-    /*int offset = 0;
-    int maxlen2 = 256;          //strlen((char *) buffer);
-
-    while(offset < maxlen2){
-    	maxlen2 = maxlen2 - offset;
-    	buffer = buffer + offset;
-
-        offset = read(sock, buffer, maxlen2);
-        if (offset == -1)   {
-            fprintf(stderr,"Message non envoyé\n");
-            exit(EXIT_FAILURE);            
-        }    
-    }
-
-    return offset;*/
-
+    int lu = read(sock, buffer, (int) 256);    
     return lu;
 }
 
 int do_write(const int sock, const char buffer[256]){
-   // ssize_t rep = write(sock, buffer, strlen(buffer));
+   
+    int offset = 0;      
+    int i;
 
-    int offset = 0;
-    int maxlen2 = 256;          //strlen((char *) buffer);
+    for (i = 0; i < 256; i++) {
+
+       if (buffer [i] == '\n')
+        break;                                          
+    }
+
+    int maxlen2 = i+1;
 
     while(offset < maxlen2){
     	maxlen2 = maxlen2 - offset;
     	buffer = buffer + offset;
 
         offset = write(sock, buffer, maxlen2);
+
         if (offset == -1)   {
             fprintf(stderr,"Message non envoyé\n");
             exit(EXIT_FAILURE);            
-        }    
+        } 
+              
     }
 
     return offset;
