@@ -92,40 +92,29 @@ int main(int argc, char** argv)
 
     for (;;){
        
-        //use select to listen to sockets
-
-        //FD_COPY(&readfds, &rd_select);
-
+    //use select to listen to sockets
+       
         fd_set* p = &rd_select ;
-
         *p = readfds;
-
-        int sel = select(nfds + 1, &rd_select, NULL, NULL, NULL);
-
-        //printf("Valeur de select : %d", sel);
+        int sel = select(nfds + 1, &rd_select, NULL, NULL, NULL);        
 
         if (sel == -1)     {
             perror("select()");
             exit(EXIT_FAILURE);
         }
 
-        //implement the listening for incoming sockets
+    //implement the listening for incoming sockets
 
          if (FD_ISSET(sockfd, &rd_select)) {
             
-            if (nb_client+1 > 2)    {
-                int sock_tmp = do_accept(sockfd, (struct sockaddr *) addr, (socklen_t) sizeof(addr));
-
-                
-                char* tmp = "Can not accept further connexion: try later\n";
-                
+            if (nb_client >= 2)    {                
+                int sock_tmp = do_accept(sockfd, (struct sockaddr *) addr, (socklen_t) sizeof(addr));                
+                char* tmp = "Server cannot accept incoming connections anymore. Try again later.\n";                
                 do_write(sock_tmp, tmp);
-                close(sock_tmp); 
-                break;
+                close(sock_tmp);                
             }
         //accept connection from client
-            else    {
-           
+            else    {           
                 socks[nb_client] = do_accept(sockfd, (struct sockaddr *) addr, (socklen_t) sizeof(addr));            
                 FD_SET(socks[nb_client], &readfds);
                 nfds = max(nfds, socks[nb_client]);
@@ -133,35 +122,26 @@ int main(int argc, char** argv)
             }
         }
         
-        // then implement the listening for already connected socket that write data to the server
+    // then implement the listening for already connected socket that write data to the server
   
-        /*int new_socks;
-        //accept connection from client
-            new_socks = do_accept(sockfd, (struct sockaddr *) addr, (socklen_t) sizeof(addr));*/
         int j;
-
         for (j = 0; j < nb_client; j++)     {
 
             if (FD_ISSET(socks[j], &rd_select))     {
-
-                //read what the client has to say
-                
+            //read what the client has to say                
                 char buffer[256];
                 memset(buffer, 0, 256);
-                do_read(socks[j], buffer);        
+                do_read(socks[j], buffer);
+                fprintf(stdout, "[CLIENT n°%i] : %s", j+1, buffer);        
                 
-                if (strcmp(buffer,"/quit\n") == 0)  {
-
-                    fprintf(stdout, "[CLIENT n°%i] : %s", j, buffer);
-
-                    do_write(socks[j], "You will be terminated\n");
-                    break;
+                if (strcmp(buffer,"/quit\n") == 0)  {                    
+                    do_write(socks[j], "You will be terminated\n");                    
+                    close(socks[j]);
+                    nb_client--;
+                                        
                 }
 
                 else    {
-                    
-                    fprintf(stdout, "[CLIENT] : %s", buffer);
-
                     //we write back to the client
                     do_write(socks[j], buffer);            
                 }
@@ -171,8 +151,7 @@ int main(int argc, char** argv)
     } 
 
     int j;
-
-    for (j = 0; j < nb_client; j++)     {  
+    for (j = 0; j < nb_client; j++)     {      
     //clean up client socket
         close(socks[j]);
     }

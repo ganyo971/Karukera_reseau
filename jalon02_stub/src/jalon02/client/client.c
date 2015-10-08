@@ -100,10 +100,12 @@ int main(int argc,char** argv)
         memset(&buffer, 0, (int) 256);
         do_read(sockfd, buffer);
         fprintf(stdout, "[SERVER] : %s", buffer);
-        if(strcmp(buffer, "You will be terminated\n") == 0){
+        if(strcmp(buffer, "You will be terminated\n") == 0)     {
             fprintf(stdout, "Connection terminated\n");
             break;
         }
+        if (strcmp(buffer, "Server cannot accept incoming connections anymore. Try again later.\n")==0)
+            break;
 
    
     }
