@@ -11,6 +11,7 @@
 #include <string.h>
 #include <stddef.h>
 
+#include <sys/time.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netdb.h>
@@ -59,6 +60,12 @@ int main(int argc,char** argv)
         return 1;
     }
 
+// File descriptor set for the select
+    fd_set readfds;
+    fd_set writefds;
+    fd_set exceptfds;
+    struct timeval timeout;
+
 //get address info from the server
     struct addrinfo addr;
     struct addrinfo * add = &addr;
@@ -76,22 +83,31 @@ int main(int argc,char** argv)
     do_connect(sockfd,addr.ai_addr, addr.ai_addrlen);
 
     for(;;){
+
+
+        FD_SET(sockfd, &writefds);
+
         char buffer[256];
         memset(&buffer, 0, 256);
-
         fprintf (stdout,"Tapez le message à envoyer (moins de 256 caractères) : \n");
         fgets((char *) buffer, 256, stdin);
-        int ecrit = write(sockfd, buffer, strlen((char *) buffer));
-        
+        write(sockfd, buffer, strlen((char *) buffer));
+
         //handle_client_message(sockfd, &buffer, (int) 256);
+
+        FD_SET(sockfd, &readfds);
 
         memset(&buffer, 0, (int) 256);
         do_read(sockfd, buffer);
         fprintf(stdout, "[SERVER] : %s", buffer);
-        if(strcmp(buffer, "You will be terminated\n") == 0){
+        if(strcmp(buffer, "You will be terminated\n") == 0)     {
             fprintf(stdout, "Connection terminated\n");
             break;
         }
+        if (strcmp(buffer, "Server cannot accept incoming connections anymore. Try again later.\n")==0)
+            break;
+
+   
     }
 
     close(sockfd);
