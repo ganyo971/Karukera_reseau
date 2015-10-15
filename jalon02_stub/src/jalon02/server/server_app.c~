@@ -24,26 +24,60 @@ void main(int argc, char** argv) {
 		exit(-1);
 	}
 
+	int server_sock;
+	struct sockaddr_in * serv_addr = malloc(sizeof(*serv_addr));
+    struct sockaddr_in * addr = malloc(sizeof(*addr));
+
+    char buffer[256];
+    memset(buffer, 0, 256);
+
+    //puser users = malloc(20*sizeof(stuct user));
+    int users[20];
+    int most_recent_user = 0;
+
+    fd_set rdfs;
+
 	//init a fresh socket
-    //do_socket()
+    server_sock = do_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 		
 	//init server address structure
-	//init_serv_addr()
+	init_serv_addr(argv[1],serv_addr);
 
 	//perform the binding
-	//do_bind()
+	do_bind(sockfd, serv_addr, sizeof(*serv_addr));
 
 	//specify the socket to be a server socket and listen for at most 20 concurrent client
+	if(listen(sockfd, 20) == -1)
+        error("ERROR Listen");
 	
 
 	//init the fdset
+	FD_ZERO(&rdfs);
+    FD_SET(server_sock, rdfs);
 
 	//in an infinite loop, listen to the stored sockets
 	for (;;) {
 
 		//use select to listen to sockets
+		if(select(server_sock+1, &rdfs, NULL, NULL, NULL) == -1){
+			error("ERROR Server Select");
+		}
 
 		//implement the listening for incoming sockets
+		if(FD_ISSET(server_sock, &rdfs)){
+			int new_sock = do_accept(sockfd, (struct sockaddr *) addr, (socklen_t) sizeof(addr));
+			
+			if (++most_recent_user > 20){
+				//on ferme tout et on envoie un message de saturation du serveur
+				break;
+			}
+
+		
+
+			FD_SET(new_sock, &rdfs);
+
+			}
+	}
 
 		// then implement the listening for already connected socket that write data to the server
 

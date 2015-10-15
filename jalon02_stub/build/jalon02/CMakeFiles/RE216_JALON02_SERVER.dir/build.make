@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fumont/Karukera_reseau/jalon02_stub/src
+CMAKE_SOURCE_DIR = /home/steve/RE216/Karukera_reseau/jalon02_stub/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fumont/Karukera_reseau/jalon02_stub/build
+CMAKE_BINARY_DIR = /home/steve/RE216/Karukera_reseau/jalon02_stub/build
 
 # Include any dependencies generated for this target.
 include jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/depend.make
@@ -50,18 +50,18 @@ include jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/progress.make
 include jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/flags.make
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/flags.make
-jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o: /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fumont/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_1)
+jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/steve/RE216/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o   -c /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.c
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o   -c /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.c
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.i"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.c > CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.i
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.c > CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.i
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.s"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.c -o CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.s
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.c -o CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.s
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o.requires:
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o.requires
@@ -73,18 +73,18 @@ jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o.provides: jalon
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o.provides.build: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/callbacks.c.o
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/flags.make
-jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o: /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fumont/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_2)
+jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/steve/RE216/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o   -c /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o   -c /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.i"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c > CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.i
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c > CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.i
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.s"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c -o CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.s
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c -o CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.s
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o.requires:
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o.requires
@@ -96,18 +96,18 @@ jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o.provides: jalo
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o.provides.build: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_app.c.o
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/flags.make
-jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o: /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server_lib.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fumont/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_3)
+jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_lib.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/steve/RE216/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o   -c /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server_lib.c
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o   -c /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_lib.c
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.i"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server_lib.c > CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.i
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_lib.c > CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.i
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.s"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server_lib.c -o CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.s
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_lib.c -o CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.s
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o.requires:
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o.requires
@@ -119,18 +119,18 @@ jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o.provides: jalo
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o.provides.build: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/server_lib.c.o
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/flags.make
-jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o: /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/user.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fumont/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_4)
+jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/user.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/steve/RE216/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o   -c /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/user.c
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o   -c /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/user.c
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.i"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/user.c > CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.i
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/user.c > CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.i
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.s"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/user.c -o CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.s
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/user.c -o CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.s
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o.requires:
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o.requires
@@ -142,18 +142,18 @@ jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o.provides: jalon02/CM
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o.provides.build: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/server/user.c.o
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/flags.make
-jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o: /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fumont/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_5)
+jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/steve/RE216/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o   -c /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o   -c /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.i"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c > CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.i
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c > CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.i
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.s"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c -o CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.s
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c -o CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.s
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o.requires:
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o.requires
@@ -165,18 +165,18 @@ jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o.provides: jalon0
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o.provides.build: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/network.c.o
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.o: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/flags.make
-jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.o: /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fumont/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_6)
+jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/steve/RE216/Karukera_reseau/jalon02_stub/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.o"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.o   -c /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.o   -c /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.i"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c > CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.i
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c > CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.i
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.s"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c -o CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.s
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c -o CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.s
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.o.requires:
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/commons/contrib.c.o.requires
@@ -208,7 +208,7 @@ jalon02/RE216_JALON02_SERVER: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/common
 jalon02/RE216_JALON02_SERVER: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/build.make
 jalon02/RE216_JALON02_SERVER: jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable RE216_JALON02_SERVER"
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RE216_JALON02_SERVER.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RE216_JALON02_SERVER.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/build: jalon02/RE216_JALON02_SERVER
@@ -223,10 +223,10 @@ jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/requires: jalon02/CMakeFiles/RE216_J
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/requires
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/clean:
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 && $(CMAKE_COMMAND) -P CMakeFiles/RE216_JALON02_SERVER.dir/cmake_clean.cmake
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 && $(CMAKE_COMMAND) -P CMakeFiles/RE216_JALON02_SERVER.dir/cmake_clean.cmake
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/clean
 
 jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/depend:
-	cd /home/fumont/Karukera_reseau/jalon02_stub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fumont/Karukera_reseau/jalon02_stub/src /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02 /home/fumont/Karukera_reseau/jalon02_stub/build /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02 /home/fumont/Karukera_reseau/jalon02_stub/build/jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/steve/RE216/Karukera_reseau/jalon02_stub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/steve/RE216/Karukera_reseau/jalon02_stub/src /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02 /home/steve/RE216/Karukera_reseau/jalon02_stub/build /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02 /home/steve/RE216/Karukera_reseau/jalon02_stub/build/jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/depend
 

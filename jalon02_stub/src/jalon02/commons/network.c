@@ -37,16 +37,15 @@ int do_socket(int family, int type, int protocol){
 
     int sockfd;
     sockfd = socket(family, type, protocol);
-    if (sockfd == -1)
+    if (sockfd == -1){
         error("ERROR socket");
+    }
     return sockfd;
 }
 
 void do_connect(int sock, const struct sockaddr* addr, socklen_t addr_len){
-     int c;
-
+    int c;
     c = connect(sock, addr, addr_len);
-
     if (c != 0) {
         perror("Erreur client connect : ");
     }
@@ -55,11 +54,8 @@ void do_connect(int sock, const struct sockaddr* addr, socklen_t addr_len){
 
 void init_serv_addr(const char* port, struct sockaddr_in *serv_addr){
     int portno;
-
     memset(serv_addr, 0, sizeof(*serv_addr));
-
     portno = atoi(port);
-
     serv_addr->sin_family = AF_INET;
     serv_addr->sin_addr.s_addr = htonl(INADDR_ANY);
     serv_addr->sin_port = htons(portno);
