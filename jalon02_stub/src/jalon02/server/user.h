@@ -15,6 +15,10 @@
 
 //that's the struture you should use to store your users
 struct user{
+	char * nickname;
+	char * addr;
+	int port;
+	int sock;
 };
 
 typedef struct user* puser;

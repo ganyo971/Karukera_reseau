@@ -6,8 +6,19 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
+/home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/client/client.h
+sys/types.h
+-
+sys/socket.h
+-
+netdb.h
+-
+
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/colors.h
+
+/home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.h
+unistd.h
+-
 
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c
 stdio.h
@@ -85,31 +96,9 @@ client.h
 ../commons/contrib.h
 /home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.h
 
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/client/client.h
-sys/types.h
--
-sys/socket.h
--
-netdb.h
--
-
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.h
-unistd.h
--
-
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.h
->>>>>>> c906d537a44190c676414d14219c487c3ddd37b9
-sys/socket.h
--
-sys/types.h
--
-netinet/in.h
--
-stdbool.h
--
-
-<<<<<<< HEAD
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.h
+
+/home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server.h
 
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/user.h
 stddef.h
@@ -117,7 +106,3 @@ stddef.h
 netinet/in.h
 -
 
-=======
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server.h
-
->>>>>>> c906d537a44190c676414d14219c487c3ddd37b9

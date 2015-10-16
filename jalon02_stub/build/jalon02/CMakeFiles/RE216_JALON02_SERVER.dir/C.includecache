@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.h
-=======
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.h
->>>>>>> c906d537a44190c676414d14219c487c3ddd37b9
 sys/socket.h
 -
 sys/types.h
@@ -20,11 +16,7 @@ netinet/in.h
 stdbool.h
 -
 
-<<<<<<< HEAD
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server.h
-=======
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server.h
->>>>>>> c906d537a44190c676414d14219c487c3ddd37b9
 
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server_app.c
 resolv.h
@@ -38,9 +30,5 @@ stdlib.h
 ../commons/network.h
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.h
 server.h
-<<<<<<< HEAD
 /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server.h
-=======
-/home/fumont/Karukera_reseau/jalon02_stub/src/jalon02/server/server.h
->>>>>>> c906d537a44190c676414d14219c487c3ddd37b9
 

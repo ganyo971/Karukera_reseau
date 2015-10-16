@@ -19,7 +19,7 @@ int server_socket_fd;
 
 void main(int argc, char** argv) {
     if (argc != 2) {
-        fprintf(stderr, "plese specify local port to bind to\n");
+        fprintf(stderr, "please specify local port to bind to\n");
         exit(-1);
     }
 
@@ -89,13 +89,16 @@ void main(int argc, char** argv) {
                     if (strcmp(buffer,"/quit\n") == 0){
                         fprintf(stdout, "[CLIENT] : %s", buffer);
                         do_write(new_sock, "You will be terminated\n");
+                        FD_CLR(new_sock, &rdfs);
                         close(new_sock);
+                        printf("The client n°%i is now disconnected\n", (current_fd-3));
                         max_fd -= 1;
+                    }else{
+                        // Display on the server monitor who is saying what
+                        fprintf(stdout, "[CLIENT n° %i] : %s", new_sock-3, buffer);
+                        // we write back to the client
+                        do_write(new_sock, buffer);
                     }
-                    // Display on the server monitor who is saying what
-                    fprintf(stdout, "[CLIENT n° %i] : %s", new_sock-3, buffer);
-                    // we write back to the client
-                    do_write(new_sock, buffer);
                 }
             }
             // then implement the listening for already connected socket that write data to the server
@@ -108,14 +111,17 @@ void main(int argc, char** argv) {
                     //Test the value of the message
                     if (strcmp(buffer,"/quit\n") == 0){
                         fprintf(stdout, "[CLIENT] : %s", buffer);
-                        do_write(new_sock, "You will be terminated\n");
-                        close(new_sock);
+                        do_write(current_fd, "You will be terminated\n");
+                        FD_CLR(current_fd, &rdfs);
+                        close(current_fd);
+                        printf("The client n°%i is now disconnected\n", (current_fd-3));
                         max_fd -= 1;
+                    }else{
+                        // Display on the server monitor who is saying what
+                        fprintf(stdout, "[CLIENT n° %i] : %s",(current_fd-3), buffer);
+                        // we write back to the client
+                        do_write(current_fd, buffer);
                     }
-                    // Display on the server monitor who is saying what
-                    fprintf(stdout, "[CLIENT n° %i] : %s",(current_fd-3), buffer);
-                    // we write back to the client
-                    do_write(current_fd, buffer);
                 }
             }
         }

@@ -14,9 +14,12 @@ jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/client/client_lib.c.o: /home/steve/R
 jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/contrib.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.c
 jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/contrib.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.h
 
+jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/client/client.h
 jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/colors.h
+jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/contrib.h
 jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.c
 jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/commons/network.h
 jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/callbacks.h
+jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/server.h
 jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/commons/network.c.o: /home/steve/RE216/Karukera_reseau/jalon02_stub/src/jalon02/server/user.h
 
